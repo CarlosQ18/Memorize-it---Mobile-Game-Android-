@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="33dp"
+    tools:layout_editor_absoluteY="0dp">
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="29dp"
+        android:gravity="center"
+        android:text="Conectado"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userClient" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="149dp"
+        android:layout_marginBottom="56dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/userHost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:text="Nivel: 1"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/boton00"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:backgroundTint="#FF0B658E"></Button>
+
+            <Button
+                android:id="@+id/boton01"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#FF0B658E"></Button>
+
+            <Button
+                android:id="@+id/boton02"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#FF0B658E"></Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/boton03"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#FF0B658E"></Button>
+
+            <Button
+                android:id="@+id/boton04"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#FF0B658E"></Button>
+
+            <Button
+                android:id="@+id/boton05"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#FF0B658E"></Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/boton06"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#FF0B658E"></Button>
+
+            <Button
+                android:id="@+id/boton07"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#FF0B658E"></Button>
+
+            <Button
+                android:id="@+id/boton08"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:backgroundTint="#FF0B658E"></Button>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/userHost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="85dp"
+        android:gravity="left"
+        android:text="Conectando ..."
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/userClient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <TextView
+        android:id="@+id/userClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="85dp"
+        android:gravity="right"
+        android:text="Buscando Rival..."
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/userHost"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

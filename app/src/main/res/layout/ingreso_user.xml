@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvP1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:textAlignment="center"
+        android:text="Ingresa nombre jugador 1:" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/UserName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:hint="Ingresa tu Nickname"
+        android:imeOptions="actionGo"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tvP2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:text="Ingresa nombre jugador 2:" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/UserName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:hint="Ingresa tu nickname"
+        android:imeOptions="actionGo"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginTop="40dp"
+        android:onClick="play"
+        android:text="Jugar"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp" />
+
+</LinearLayout>

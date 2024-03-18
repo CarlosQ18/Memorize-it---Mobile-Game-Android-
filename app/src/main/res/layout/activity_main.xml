@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Memorize It!"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/soloMode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+
+    <Button
+        android:id="@+id/soloMode"
+        android:layout_width="165dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="153dp"
+        android:onClick="ModoSolitario"
+        android:text="Solitario"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/multipMode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+    <Button
+        android:id="@+id/multipMode"
+        android:layout_width="166dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="VersusOffline"
+        android:text="1 vs 1"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/P2PMODE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soloMode" />
+
+    <Button
+        android:id="@+id/P2PMODE"
+        android:layout_width="166dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="206dp"
+        android:onClick="Bluetoothmode"
+        android:text="P2P"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multipMode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
